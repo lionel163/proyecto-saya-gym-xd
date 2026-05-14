@@ -1,0 +1,547 @@
+body {
+  background-image: url(imagenes/copi\ de\ goku.jpg);
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background: rgba(243, 248, 240, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 2px solid rgba(255, 247, 0, 0.3);
+
+  box-shadow:
+    0 0 40px rgba(255, 247, 0, 0.4),
+    inset 0 0 10px rgba(255, 38, 0, 0.2);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #151716;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-links li a:hover {
+  color: #f9f6f6;
+  text-shadow: 0 0 8px #fb5017;
+}
+
+.nav-links li a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 2px;
+  background-color: #0a0a0a;
+  box-shadow: 0 0 10px #101110;
+  border-radius: 2px;
+}
+.titulo {
+  text-shadow: #99110d 3px 4px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem 60vw;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #ffffff 30% #4a9eff 100%);
+  -webkit-text-fill-color: rgb(13, 13, 13);
+}
+.titulo {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin: 1;
+  text-shadow: 2px 2px 4px rgba(red, green, blue, alpha);
+}
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.titulo2 {
+  text-shadow: black 3px 4px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, #ffffff 30% #4a9eff 100%);
+  -webkit-text-fill-color: rgb(255, 55, 0);
+}
+.titulo2 {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin: 1;
+  text-shadow: 2px 2px 4px rgba(rgb(38, 197, 99), green, blue, alpha);
+}
+
+.contenedor_fondo {
+  background-image: url(imagenes/posible\ imagen\ principal.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.titulo3 {
+  background-position: center;
+  color: rgb(18, 12, 1);
+  text-shadow: #99110d 2px 4px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.titulo4 {
+  background-position: center;
+  color: rgb(18, 12, 1);
+  text-shadow: #b74912 2px 1px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 2px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.body2 {
+  background-image: url(imagenes/goku\ real.jpg);
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-tienda {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  flex-direction: row;
+}
+
+.tarjeta-plan {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 280px;
+  text-align: center;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-plan:hover {
+  transform: translateY(-10px);
+  border-color: #ff3700;
+  box-shadow: 0 10px 30px rgba(255, 55, 0, 0.2);
+}
+
+.tarjeta-plan h3 {
+  color: #ffffff;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.precio {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3700;
+}
+
+.precio span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.tarjeta-plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+  color: #eee;
+  line-height: 2;
+}
+
+.btn-elegir {
+  background: transparent;
+  border: 2px solid #ff3700;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-elegir:hover {
+  background: #ff3700;
+  box-shadow: 0 0 20px #ff3700;
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.puntos-carga span {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background: #ff3700;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+@keyframes bounce {
+  to {
+    transform: translateY(-15px);
+    opacity: 0.3;
+  }
+}
+
+.accesorios-body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("imagenes/copi de goku.jpg") !important;
+}
+.grid-productos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.producto-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.producto-card img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.btn-carrito {
+  background: transparent;
+  border: 1px solid #ff3700;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.checkout-bar {
+  position: fixed;
+  bottom: 20px;
+  background: rgba(255, 55, 0, 0.9);
+  padding: 15px 40px;
+  border-radius: 50px;
+  box-shadow: 0 0 20px rgba(255, 55, 0, 0.5);
+}
+.btn-pagar {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.contenedor-contacto {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 247, 0, 0.2);
+  margin-top: 50px;
+  width: 80%;
+  max-width: 600px;
+}
+.dato {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.puntos-carga span {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  background: #ff3700;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 0.6s infinite alternate;
+}
+@keyframes bounce {
+  to {
+    transform: translateY(-15px);
+    opacity: 0.3;
+  }
+}
+
+.accesorios-body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("imagenes/copi de goku.jpg") !important;
+}
+.grid-productos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.producto-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.producto-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.btn-carrito {
+  background: transparent;
+  border: 1px solid #ff3700;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkout-bar {
+  position: fixed;
+  bottom: 20px;
+  background: rgba(255, 55, 0, 0.9);
+  padding: 15px 40px;
+  border-radius: 50px;
+  box-shadow: 2px 0 50px rgba(255, 55, 0, 0.5);
+}
+.btn-pagar {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.contenedor-contacto {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 247, 0, 0.2);
+  margin-top: 50px;
+  width: 80%;
+  max-width: 600px;
+}
+.dato {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box; /* Asegura que el padding no desborde */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  cursor: pointer;
+}
+
+.subtitulo-categoria {
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff0000; /* O el color principal de SAYA GYM */
+  display: inline-block;
+  padding-bottom: 5px;
+  width: 100%;
+}
+
+/* Estilo para las categorías */
+.titulo-categoria {
+  text-align: center;
+  color: #fff;
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ff0000;
+}
+
+/* Orden de las viñetas */
+.lista-detalles {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.lista-detalles li {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.lista-detalles li::before {
+  content: "•"; /* El punto de la viñeta */
+  color: #ff0000;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+
+
+
+
+#parrafo1{
+color: rgb(41, 41, 41);
+    font-size: 30px;
+    font-family: "Playwrite IE", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;}
+
+    #parrafo2{
+      color: rgba(255, 247, 0, 0.4);
+      font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+    }
+
+.container{
+  color: #7d372e;
+  background-color: #32972e;
+   text-shadow:#b2b712 3px 1px;
+}

@@ -1,0 +1,92 @@
+[debug] [2026-05-14T03:57:52.321Z] ----------------------------------------------------------------------
+[debug] [2026-05-14T03:57:52.325Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-05-14T03:57:52.326Z] CLI Version:   15.18.0
+[debug] [2026-05-14T03:57:52.326Z] Platform:      win32
+[debug] [2026-05-14T03:57:52.326Z] Node Version:  v24.15.0
+[debug] [2026-05-14T03:57:52.326Z] Time:          Wed May 13 2026 22:57:52 GMT-0500 (hora estándar de Perú)
+[debug] [2026-05-14T03:57:52.326Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-14T03:57:54.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-14T03:57:54.981Z] > authorizing via signed-in user (llerenapezol@gmail.com)
+[debug] [2026-05-14T03:57:54.981Z] [iam] checking project proyecto-saya-gym for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-14T03:57:54.983Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:54.984Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:54.985Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-saya-gym:testIamPermissions [none]
+[debug] [2026-05-14T03:57:54.985Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-saya-gym:testIamPermissions  x-goog-user-project=proyecto-saya-gym
+[debug] [2026-05-14T03:57:54.986Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-saya-gym:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-14T03:57:56.155Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-saya-gym:testIamPermissions 200
+[debug] [2026-05-14T03:57:56.155Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/proyecto-saya-gym:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-14T03:57:56.156Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:56.156Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:56.156Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-saya-gym [none]
+[debug] [2026-05-14T03:57:56.577Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-saya-gym 200
+[debug] [2026-05-14T03:57:56.577Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/proyecto-saya-gym {"projectId":"proyecto-saya-gym","projectNumber":"734764797385","displayName":"proyecto-saya-gym","name":"projects/proyecto-saya-gym","resources":{"hostingSite":"proyecto-saya-gym"},"state":"ACTIVE","etag":"1_61e7b746-52f1-4987-9e99-e1d8b295698f"}
+[info] 
+[info] === Deploying to 'proyecto-saya-gym'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-14T03:57:56.582Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:56.583Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:56.583Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/proyecto-saya-gym/sites/proyecto-saya-gym [none]
+[debug] [2026-05-14T03:57:57.787Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/proyecto-saya-gym/sites/proyecto-saya-gym 200
+[debug] [2026-05-14T03:57:57.787Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/proyecto-saya-gym/sites/proyecto-saya-gym {"name":"projects/proyecto-saya-gym/sites/proyecto-saya-gym","defaultUrl":"https://proyecto-saya-gym.web.app","appId":"1:734764797385:web:3da9be2e24a4203885ec18","type":"DEFAULT_SITE"}
+[debug] [2026-05-14T03:57:57.791Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:57.791Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:57.791Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/proyecto-saya-gym/versions [none]
+[debug] [2026-05-14T03:57:57.791Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/proyecto-saya-gym/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-14T03:57:58.816Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/proyecto-saya-gym/versions 200
+[debug] [2026-05-14T03:57:58.817Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/proyecto-saya-gym/versions {"name":"projects/734764797385/sites/proyecto-saya-gym/versions/a00e013bfe03afea","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[proyecto-saya-gym]: beginning deploy... 
+[info] i  hosting[proyecto-saya-gym]: found 37 files in . 
+[debug] [2026-05-14T03:57:58.844Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-14T03:57:58.845Z] [hosting] hash cache [] not populated
+[debug] [2026-05-14T03:57:58.925Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:58.925Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:58.928Z] [hosting] hash cache [] stored for 37 files
+[debug] [2026-05-14T03:57:58.929Z] [hosting][hash queue][FINAL] {"max":66,"min":31,"avg":46.486486486486484,"active":0,"complete":37,"success":37,"errored":0,"retried":0,"total":37,"elapsed":81}
+[debug] [2026-05-14T03:57:58.929Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/734764797385/sites/proyecto-saya-gym/versions/a00e013bfe03afea:populateFiles [none]
+[debug] [2026-05-14T03:57:58.929Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/734764797385/sites/proyecto-saya-gym/versions/a00e013bfe03afea:populateFiles {"files":{"/suscripciones.html":"8a0ed8abe991e6211427464017b37b2967bf293c5bab5ce09ac76252d9587304","/package.json":"3fe6a6473d16266c1f23be5ef3389653db889e69dba1b4360073e13e7f82d610","/paises.html":"3099ce46dadc7aed787eeaca95605d52924d5ea46cfef48668ec59e1701ca665","/package-lock.json":"b9107930f078c21974f5d6f55a391103c34cb1e4005ee50c9f97f5ba118ff70b","/accesorios.html":"6ccfca9c354651e986bfdcf06f155df4e7e73bff8abb0af95018f8d59d5f7c06","/public/index.html":"8f146c33f8eb815f8f6cfc64c024b9fd58014ce84b6f88633095aa7f1c7f3735","/public/style.css":"0f99053baee8f2bd27e9c10848428587ca06f141204fca402e8ed68bd313ca3e","/public/404.html":"762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890","/public/script.js":"0a62c597a2bc88ab6272804746422d216479af365de338aff1c9118efb740606","/index.html":"a4a8bd6112ea0a1dfed3c36c77b8264c6430eedfc117ca3bc72a3702ddfadbf4","/contactenos.html":"38ec83328487166752125420eaa42d30d42e4dc7bbfc1afd4be5141c59ebba56","/imagenes/imagen.principal2.0.webp":"77fe9a54bfb6e0f81dce8cd0920d0d426773538ee4b4ce6a0620a0180262dbf0","/imagenes/imagen.principal.webp":"f5962546f6db020d7620a6e9fa584085d6212ce0f347102e643567e9b81644b9","/imagenes/images21.jfif":"265cf5503221b15d73550c8f2b05ac43d383dc184a29ed73b9f93b8b0f14c1d1","/imagenes/imagen princi.webp":"8a08dfb5133eef5292f97129e1a456a0d530e9b520c0956fd999fd42fae5d9bf","/imagenes/goku live action.webp":"c9af14c4e0530d3b29f55720b0c6c0a5f0b80cf2b2c3a5873f0f00a9b6c088bf","/Camera Roll/desktop.ini":"31e5f5f343cc03b83c257970fc42213cd79c3c9cebf918301c4e80325d5efa35","/imagenes/angel rojo.jpg":"e95ab81a2ccc9987d4d8a431f0427289eab5171e91d51a6e3e7abe3bf36ed038","/imagenes/cuerdas.jpg":"8f2b2507649b9d8d9e38ce9a8f3c39a17d964cd5d551119ed5008e46b508def8","/imagenes/123.jpg":"8fee8fbc5f187c9870455f7d8e6c23cf44b7dcaeb1e60f360ef23db7795df12c","/imagenes/posible imagen principal.jpg":"29ac0a7d2170f2d4377c49e03b86866feff83a60c234b7a67022de47073273ca","/imagenes/Goku Prateado.jpg":"9e68452445dc0341bf24ea334748f97c2997cf2f16947d9475fe29bf2bede67d","/imagenes/David Laid gymshark wallpaper.jpg":"8516d228ca8778f50d8033e3830a3a0fb551e4688e5a9e458c1abae04e2d1df6","/imagenes/Calisthenics.jpg":"e67489fd6c66ba8a042d5d7a0c4dc5673774ac68fe02ac88c798d1d6298d89d8","/imagenes/angel blanco negro.jpg":"ba53c674e67b4cddbe8246b652cc6b484e8a9f00ff2c4a7aab8ff1ce50560d82","/imagenes/disciplina fitnnes.jpg":"127169f54233bc463175c904293b6430e8e5dd3550fa202d021a8cdfce1f550e","/imagenes/cuerpo y mente equilibrada.jpg":"8bdb5bba32d7633d709c03196d7c3ab553d059275e996948968bd4c8f9d231fb","/imagenes/trainer.jpg":"7a7d25464a97f84b36b450278e79365b118d3d6bcb46fb1e3971ed0e52252f84","/imagenes/Instagram.jpg":"d4812cc26403dd215a5333f87083c33867c4014cdf7b9f55b956352cb912d27f","/imagenes/goku real.jpg":"a9f740446f928b3398d60d5bac7fbe4e7256f7849ffabe3343dc53a5eb30f130","/imagenes/goku.jpg":"0bc3796eb5526d86473eadd82fee4120e6c6cb0c95d79d71455985c9e5df5e24","/imagenes/salud y suplementos.jpg":"9543c295b439af470a4b4f3326b7506576b3980d0c24c94cf4132aae84083232","/imagenes/Cbum VS Ramon Dino 🗿.jpg":"129d3528ac0ccd343e02a257c7c41d10a044725bcb33ac8c7d450ce84893427c","/imagenes/copi de goku.jpg":"95a67daba139aa0cecc887c45a1733a5ec032cc84c7715bddb95f48e44d56bd6","/imagenes/mancuernas-de-10-kg-redondas-poliuretano.jpg":"8afdb257ed954ca9a76c8694b061bb7f9e9fe1bea531c047c8195b81b8ef5c53","/imagenes/guantes.jpg":"0e25acc4d16b25e15ee22f1d11e33ef0cdb3c204481e1f9673dc75c377cece66","/imagenes/creatina.jpg":"a02902f02cd896cae40b979c87c250f08fd5cf2e5bba55c1a667049bae6833ef"}}
+[debug] [2026-05-14T03:57:59.280Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/734764797385/sites/proyecto-saya-gym/versions/a00e013bfe03afea:populateFiles 200
+[debug] [2026-05-14T03:57:59.280Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/734764797385/sites/proyecto-saya-gym/versions/a00e013bfe03afea:populateFiles {"uploadRequiredHashes":["8a0ed8abe991e6211427464017b37b2967bf293c5bab5ce09ac76252d9587304","3fe6a6473d16266c1f23be5ef3389653db889e69dba1b4360073e13e7f82d610","0a62c597a2bc88ab6272804746422d216479af365de338aff1c9118efb740606","a4a8bd6112ea0a1dfed3c36c77b8264c6430eedfc117ca3bc72a3702ddfadbf4","0f99053baee8f2bd27e9c10848428587ca06f141204fca402e8ed68bd313ca3e","38ec83328487166752125420eaa42d30d42e4dc7bbfc1afd4be5141c59ebba56","6ccfca9c354651e986bfdcf06f155df4e7e73bff8abb0af95018f8d59d5f7c06","b9107930f078c21974f5d6f55a391103c34cb1e4005ee50c9f97f5ba118ff70b","3099ce46dadc7aed787eeaca95605d52924d5ea46cfef48668ec59e1701ca665","762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files"}
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.281Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.282Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.283Z] Checked if tokens are valid: true, expires at: 1778733775090
+[debug] [2026-05-14T03:57:59.284Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/8a0ed8abe991e6211427464017b37b2967bf293c5bab5ce09ac76252d9587304 [none]
+[debug] [2026-05-14T03:57:59.284Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/8a0ed8abe991e6211427464017b37b2967bf293c5bab5ce09ac76252d9587304 [stream]
+[debug] [2026-05-14T03:57:59.285Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/3fe6a6473d16266c1f23be5ef3389653db889e69dba1b4360073e13e7f82d610 [none]
+[debug] [2026-05-14T03:57:59.285Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/3fe6a6473d16266c1f23be5ef3389653db889e69dba1b4360073e13e7f82d610 [stream]
+[debug] [2026-05-14T03:57:59.287Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/0a62c597a2bc88ab6272804746422d216479af365de338aff1c9118efb740606 [none]
+[debug] [2026-05-14T03:57:59.287Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/0a62c597a2bc88ab6272804746422d216479af365de338aff1c9118efb740606 [stream]
+[debug] [2026-05-14T03:57:59.289Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/a4a8bd6112ea0a1dfed3c36c77b8264c6430eedfc117ca3bc72a3702ddfadbf4 [none]
+[debug] [2026-05-14T03:57:59.289Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/a4a8bd6112ea0a1dfed3c36c77b8264c6430eedfc117ca3bc72a3702ddfadbf4 [stream]
+[debug] [2026-05-14T03:57:59.290Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/0f99053baee8f2bd27e9c10848428587ca06f141204fca402e8ed68bd313ca3e [none]
+[debug] [2026-05-14T03:57:59.290Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/0f99053baee8f2bd27e9c10848428587ca06f141204fca402e8ed68bd313ca3e [stream]
+[debug] [2026-05-14T03:57:59.292Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/38ec83328487166752125420eaa42d30d42e4dc7bbfc1afd4be5141c59ebba56 [none]
+[debug] [2026-05-14T03:57:59.292Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/38ec83328487166752125420eaa42d30d42e4dc7bbfc1afd4be5141c59ebba56 [stream]
+[debug] [2026-05-14T03:57:59.294Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/6ccfca9c354651e986bfdcf06f155df4e7e73bff8abb0af95018f8d59d5f7c06 [none]
+[debug] [2026-05-14T03:57:59.294Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/6ccfca9c354651e986bfdcf06f155df4e7e73bff8abb0af95018f8d59d5f7c06 [stream]
+[debug] [2026-05-14T03:57:59.295Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/b9107930f078c21974f5d6f55a391103c34cb1e4005ee50c9f97f5ba118ff70b [none]
+[debug] [2026-05-14T03:57:59.295Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/b9107930f078c21974f5d6f55a391103c34cb1e4005ee50c9f97f5ba118ff70b [stream]
+[debug] [2026-05-14T03:57:59.296Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/3099ce46dadc7aed787eeaca95605d52924d5ea46cfef48668ec59e1701ca665 [none]
+[debug] [2026-05-14T03:57:59.296Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/3099ce46dadc7aed787eeaca95605d52924d5ea46cfef48668ec59e1701ca665 [stream]
+[debug] [2026-05-14T03:57:59.297Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 [none]
+[debug] [2026-05-14T03:57:59.297Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/proyecto-saya-gym/versions/a00e013bfe03afea/files/762bf484ba67404bd1a3b181546ea28d60dfddf18e9dd4795d8d25bcf3c1a890 [stream]
+[debug] [2026-05-14T03:57:59.298Z] [hosting][populate queue][FINAL] {"max":359,"min":359,"avg":359,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":373}
+[debug] [2026-05-14T03:57:59.298Z] [hosting] uploads queued: 10

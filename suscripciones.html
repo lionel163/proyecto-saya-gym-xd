@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suscripciones - SAYA GYM</title>
+    <link rel="stylesheet" href="style.css" />
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Sekuya&family=Supermercado+One&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Sekuya&family=Supermercado+One&display=swap" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+    <header class="header-container">
+      <h1 class="titulo">Suscripciones</h1>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="suscripciones.html" class="active">Suscripciones</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+          <li><a href="contactenos.html">Contáctenos</a></li>
+          <li><a href="usuario.html">usuarios</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contenedor-tienda">
+      <div class="tarjeta-plan">
+        <div class="glow-tienda"></div>
+        <h3 id="parrafo1">PRUEBA GRATIS POR SOLO 1 MES</h3>
+        <p class="precio">S/ 00.00$<span>/mes</span></p>
+        <ul>
+          <li >Acceso Total 24/7</li>
+          <li>Área de Pesas Libres</li>
+          <li>Duchas y Lockers</li>
+          <li>lleva 3 invitados</li>
+          <li>¡¡SUPLEMENTOS DE REGALO POR RENOVAR TU PLAN!!</li>
+        </ul>
+        <button class="btn-elegir">ELEGIR PRUEBA GRATIS</button>
+      </div>
+          <main class="contenedor-tienda">
+      <div class="tarjeta-plan">
+        <div class="glow-tienda"></div>
+        <h3>PLAN GUERRERO Z *1mes</h3>
+        <p class="precio">S/ 89.00<span>/mes</span></p>
+        <ul>
+          <li>Acceso Total 24/7</li>
+          <li>Área de Pesas Libres</li>
+          <li>Duchas y Lockers</li>
+          <li> CAMISETA SUPERSAYAN DE REGALO</li>
+        </ul>
+        <button class="btn-elegir">ELEGIR PLAN</button>
+      </div>
+
+      <div class="tarjeta-plan destacado">
+        <div class="glow-tienda"></div>
+        <h3 id="parrafo2">SUPER SAYA *3 meses</h3>
+        <p class="precio">S/ 149.00<span>/mes</span></p>
+        <ul>
+          <li>Todo el Plan Guerrero z</li>
+          <li>Entrenador Personal</li>
+          <li>Plan de Nutrición</li>
+          <li>descuentos del 20% en productos seleccionados</li>
+          <li>zona vip a eventos fitnnes</li>
+        </ul>
+        <button class="btn-elegir">ELEGIR PLAN</button>
+      </div>
+    </main>
+  </body>
+</html>
+<div id="loader-overlay" class="loader-overlay">
+  <div class="puntos-carga"><span></span><span></span><span></span></div>
+  <p>Procesando suscripción...</p>
+</div>
+
+<script>
+  function simularCarga() {
+    const loader = document.getElementById("loader-overlay");
+    loader.style.display = "flex"; // Muestra la carga
+    setTimeout(() => {
+      loader.style.display = "none"; // La oculta después de 3 segundos
+      alert("¡Plan seleccionado con éxito!");
+    }, 3000);
+  }
+
+  // Asignar la función a todos los botones
+  document.querySelectorAll(".btn-elegir").forEach((boton) => {
+    boton.onclick = simularCarga;
+  });
+</script>

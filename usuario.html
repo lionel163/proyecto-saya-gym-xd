@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Países</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="suscripciones.html">Suscripciones</a></li>
+      <li><a href="accesorios.html">Accesorios</a></li>
+      <li><a href="contactenos.html" class="active">Contáctenos</a></li>
+      <li><a href="usuario.html">usuarios</a></li>
+    </ul>
+    <div class="container">
+      <h1>usuarios registrados</h1>
+      <div class="input-group">
+        <input type="text" id="paisInput" placeholder="Escribe tu nombre de usuario..." />
+        <button id="btnAgregar">Agregar</button>
+      </div>
+
+      <ul id="listaPaises">
+        <!-- Aquí aparecerán los usuarios -->
+      </ul>
+    </div>
+
+    <!-- Cambia la llamada a tu script así -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
